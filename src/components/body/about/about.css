@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+.about {
+    padding-bottom: 48px;
+}
+
+.about-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: url(../../../assests/about.jpg); */
+    /* background-color: #181717; */
+    border-radius: 32px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.2) inset, 0 0 20px rgba(255, 255, 255, 0.2) inset;
+    color: white;
+    background-image: url(../../../assests/colorful.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.picture {
+    /* height: 520px; */
+    width: 410px;
+    border-radius: 200px;
+}
+
+.about-info {
+    font-size: 24px;
+    padding-top: 55px;
+    padding-left: 3rem;
+}
+
+.info-name {
+    /* color: blue; */
+    font-size: 64px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f5a9bc, 0 0 70px #f5a9bc, 0 0 80px #f5a9bc, 0 0 100px #f5a9bc, 0 0 150px #f5a9bc;
+    animation: glowing 2s ease-in-out infinite;
+    animation: color-change 1s linear infinite;
+    font-weight: bold;
+    color: #fff;
+}
+@keyframes color-change {
+    0% { color: red; }
+    25% { color: skyblue; }
+    50% { color: green; }
+    75% { color: yellow; }
+    100% { color: purple; }
+}
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f5a9bc, 0 0 70px #f5a9bc, 0 0 80px #f5a9bc, 0 0 100px #f5a9bc, 0 0 150px #f5a9bc;
+    }
+
+    50% {
+        text-shadow: none;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #f5a9bc, 0 0 70px #f5a9bc, 0 0 80px #f5a9bc, 0 0 100px #f5a9bc, 0 0 150px #f5a9bc;
+    }
+}
+
+.web-dev {
+    color: black;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-weight: 400;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-weight: 300; */
+}
+
+@media screen and (max-width:720px) {
+    .about-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picture {
+        /* height:380px; */
+        width: 330px;
+    }
+
+    .about-info {
+        font-size: 20px;
+        padding-left: 1rem;
+    }
+
+    .info-name {
+        font-size: 32px;
+        font-family: 'Work Sans', sans-serif;
+
+
+    }
+}

@@ -1,0 +1,22 @@
+export const SocialData=[
+    {
+        platform:"Instagram",
+        link:"www.instagram.com/alizulfiqar_46/",
+        icon:require('../../assests/icons/instagram.png'),
+    },
+    {
+        platform:"facebook",
+        link:"https://web.facebook.com/profile.php?id=100082346235429",
+        icon:require('../../assests/icons/facebook(1).png'),
+    },
+    {
+        platform:"twitter",
+        link:"https://twitter.com/alizulfiqar_46",
+        icon:require('../../assests/icons/twitter.png'),
+    },
+    {
+        platform:"cloud",
+        link:"https://replit.com/@ALIZULFIQAR46",
+        icon:require('../../assests/icons/cloud.png'),
+    },
+]

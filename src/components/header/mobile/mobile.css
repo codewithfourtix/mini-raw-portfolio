@@ -1,0 +1,84 @@
+.mobile {
+    background-color: white;
+    height: 50vh;
+    width: 60vw;
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    /* background-color: grey; */
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: black; */
+    border-radius: 20px;
+    box-shadow:
+
+        0 0 30px rgba(0, 0, 0, 0.5),
+        0 10px 10px rgba(0, 0, 0, 0.5),
+        0 -10px 10px rgba(255, 255, 255, 0.2),
+        10px 0 10px rgba(255, 255, 255, 0.2),
+        -10px 0 10px rgba(255, 255, 255, 0.2),
+        0 0 20px rgba(255, 255, 255, 0.2),
+        0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.close-icon {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    color: black;
+}
+
+.mobile-options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    padding-top: 24px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mobile-option {
+    font-size: 24px;
+    margin: 12px 0px;
+    display: flex;
+
+}
+
+.mobile-option a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    /* property for hover underline  */
+    position: relative;
+}
+
+.icons-spacing {
+    padding-right: 3px;
+}
+
+/* hover underline */
+.hover-underline:hover {
+    color: #007bff;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: red;
+    /* change this to any color you like */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.hover-underline:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
